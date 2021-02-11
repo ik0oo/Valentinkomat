@@ -19,7 +19,7 @@ export const getSuggestions = async ({ data }: { readonly data: string }) => {
   const res = await req.json();
   return res.data;
 
-  // return Promise.resolve(suggestions);
+  // return Promise.resolve(suggestions.data);
 };
 
 const getList = async (): Promise<readonly Card[]> => {
