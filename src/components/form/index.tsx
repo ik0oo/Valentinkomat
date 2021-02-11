@@ -113,6 +113,7 @@ export const Form = memo(
       <FormWrapper onSubmit={onSubmit} id="editor-form">
         <Autocomplete onChange={onChangeAutocomplete} />
         <TextArea
+          spellCheck={false}
           maxLength={TEXT_AREA_MAX_LEN}
           id="text"
           hasError={hasError}
