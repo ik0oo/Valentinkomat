@@ -1,0 +1,27 @@
+{
+  "data": [
+    {
+      "card": {
+        "id": 1,
+        "src": "/images/valentines/rain.png",
+        "title": "It's raining hearts"
+      },
+      "content": "Привет!",
+      "from": {
+        "name": "Ширяева Лада Дмитриевна",
+        "link": null
+      },
+      "matched": 1
+    },
+    {
+      "card": {
+        "id": 2,
+        "src": "/images/valentines/love.png",
+        "title": "Love is in the air"
+      },
+      "content": "Привет!",
+      "from": null,
+      "matched": 0
+    }
+  ]
+}
