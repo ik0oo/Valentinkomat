@@ -1,6 +1,6 @@
 // libs
 import styled from 'styled-components';
-import { useLocation } from 'wouter';
+import { useLocation, Link } from 'wouter';
 
 // state
 import { $newCard } from '../model/bootstrap';
@@ -90,7 +90,9 @@ export const NewCardScreen = () => {
           {/*    <ButtonTransparent type="button">send new</ButtonTransparent>*/}
           {/*  </>*/}
           {/*) : (*/}
-          <Button type="button">send new</Button>
+          <Link href={ROUTES.EDITOR}>
+            <Button type="button">send new</Button>
+          </Link>
           {/*)}*/}
         </ButtonsBlock>
       </Wrapper>
