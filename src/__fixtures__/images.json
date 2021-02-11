@@ -1,17 +1,7 @@
-[
-  {
-    "id": 1,
-    "src": "/images/valentines/rain.png",
-    "title": "It's raining hearts"
-  },
-  {
-    "id": 2,
-    "src": "/images/valentines/rain.png",
-    "title": "It's raining hearts"
-  },
-  {
-    "id": 3,
-    "src": "/images/valentines/rain.png",
-    "title": "It's raining hearts"
-  }
-]
+{
+  "cards": [
+    { "id": 0, "title": "Tic tac love", "src": "/images/valentines/cross.png" },
+    { "id": 1, "title": "It's raining hearts", "src": "/images/valentines/rain.png" },
+    { "id": 2, "title": "Love is in the air", "src": "/images/valentines/love.png" }
+  ]
+}

@@ -29,7 +29,7 @@ const getList = async (): Promise<readonly Card[]> => {
   // return new Promise((res) => {
   //   setTimeout(() => {
   //     res(list.data);
-  //   }, 50000);
+  //   }, 5000);
   // });
 
   // return Promise.resolve(list);
@@ -38,7 +38,7 @@ const getList = async (): Promise<readonly Card[]> => {
 const getCard = async ({ id }: { readonly id: string }) => {
   const req = await fetch(`${END_POINTS.GET}?id=${id}`);
   const res = await req.json();
-  return res.cards;
+  return res;
 
   // return Promise.resolve(card);
 };
@@ -46,9 +46,9 @@ const getCard = async ({ id }: { readonly id: string }) => {
 const getImages = async () => {
   const req = await fetch(END_POINTS.IMAGES);
   const res = await req.json();
-  return res.data;
+  return res.cards;
 
-  // return Promise.resolve(images);
+  // return Promise.resolve(images.cards);
 };
 
 type Success = {
