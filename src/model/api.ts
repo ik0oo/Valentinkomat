@@ -39,7 +39,7 @@ const getList = async (): Promise<readonly Card[]> => {
 const getCard = async ({ id }: { readonly id: string }) => {
   const req = await fetch(`${END_POINTS.GET}?id=${id}`);
   const res = await req.json();
-  return res.card;
+  return res.data;
 
   // return Promise.resolve(card);
 };
