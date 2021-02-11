@@ -30,6 +30,7 @@ const TextArea = styled.textarea<{ readonly hasError: boolean }>`
   color: #6f6f6f;
   outline: none;
   resize: none;
+  font-family: inherit;
 `;
 
 const FormWrapper = styled.form`
