@@ -68,3 +68,6 @@
     border: none;
 }
 
+.react-autosuggest__suggestions-list li div {
+    word-break: break-all;
+}
