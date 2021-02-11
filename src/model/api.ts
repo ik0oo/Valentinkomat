@@ -79,7 +79,7 @@ export const sendData = async ({
   body.append('to', String(to));
   body.append('content', String(content));
   body.append('card_id', String(card_id));
-  body.append('anonymous', String(anonymous));
+  body.append('anonymous', String(Number(anonymous)));
   //
   // return Promise.resolve({
   //   success: true,
@@ -96,7 +96,7 @@ export const sendData = async ({
 
   const res = await req.json();
 
-  return res.data;
+  return res;
 };
 
 export const getDataFx = createEffect(async ({ id }: { readonly id: string | null }) => {
