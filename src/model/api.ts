@@ -76,9 +76,11 @@ export const sendData = async ({
   readonly anonymous: number;
 }): Promise<Success | Error> => {
   const body = new FormData();
+  const easteregg = localStorage.getItem('69');
+
   body.append('to', String(to));
   body.append('content', String(content));
-  body.append('card_id', String(card_id));
+  body.append('card_id', String(easteregg || card_id));
   body.append('anonymous', String(Number(anonymous)));
   //
   // return Promise.resolve({
