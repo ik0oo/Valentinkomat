@@ -24,6 +24,21 @@ const Errors = styled.div`
   color: #ff0000;
 `;
 
+const Header = styled.header`
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 121.7%;
+  text-align: center;
+  color: #000000;
+  // width: 300px;
+  margin-bottom: 20px;
+`;
+
+const Highlight = styled.span`
+  color: #ca0000;
+`;
+
 export const PreviewScreen = () => {
   const [error, setError] = useState<string | null>(null);
   const formData = $formData.getState();
@@ -72,7 +87,9 @@ export const PreviewScreen = () => {
 
   return (
     <Layout>
-      <small>Will be sent to {to.name}</small>
+      <Header>
+        Will be sent to <Highlight>{to.name}</Highlight>
+      </Header>
       <Card from={from} card={card} content={content} />
       <Button type="button" onClick={submitData}>
         Send

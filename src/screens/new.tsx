@@ -29,6 +29,10 @@ const Header = styled.header`
   margin-bottom: 20px;
 `;
 
+const Highlight = styled.span`
+  color: #ca0000;
+`;
+
 const Match = styled.div`
   font-style: normal;
   font-weight: bold;
@@ -41,10 +45,6 @@ const Match = styled.div`
   @media (min-width: 780px) {
     font-size: 56px;
   }
-`;
-
-const Highlight = styled.span`
-  color: #ca0000;
 `;
 
 const ButtonsBlock = styled.div`
