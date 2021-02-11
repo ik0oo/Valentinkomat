@@ -72,7 +72,7 @@ export const PreviewScreen = () => {
 
   return (
     <Layout>
-      <details>{to.name}</details>
+      <small>{to.name}</small>
       <Card from={from} card={card} content={content} />
       <Button type="button" onClick={submitData}>
         Send
