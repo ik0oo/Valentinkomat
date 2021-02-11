@@ -1,7 +1,7 @@
-import list from '../__fixtures__/list.json';
-import card from '../__fixtures__/card.json';
-import images from '../__fixtures__/images.json';
-import suggestions from '../__fixtures__/suggestions.json';
+// import list from '../__fixtures__/list.json';
+// import card from '../__fixtures__/card.json';
+// import images from '../__fixtures__/images.json';
+// import suggestions from '../__fixtures__/suggestions.json';
 
 import { createEffect } from 'effector';
 import { Card } from './types';
@@ -18,6 +18,7 @@ export const getSuggestions = async ({ data }: { readonly data: string }) => {
   const req = await fetch(`${END_POINTS.SUGGESTION}?q=${data}`);
   const res = await req.json();
   return res.data;
+
   // return Promise.resolve(suggestions);
 };
 
@@ -31,14 +32,14 @@ const getList = async (): Promise<readonly Card[]> => {
   //     res(list.data);
   //   }, 5000);
   // });
-
+  //
   // return Promise.resolve(list);
 };
 
 const getCard = async ({ id }: { readonly id: string }) => {
   const req = await fetch(`${END_POINTS.GET}?id=${id}`);
   const res = await req.json();
-  return res;
+  return res.card;
 
   // return Promise.resolve(card);
 };

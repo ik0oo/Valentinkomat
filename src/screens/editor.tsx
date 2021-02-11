@@ -85,6 +85,7 @@ const Slides = styled.div`
 
   img {
     width: 100%;
+    height: auto;
   }
 
   > .active {
